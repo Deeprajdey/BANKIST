@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/favicon2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BANK-APP</title>
+  </head>
+  <body>
+    <header>
+      <h3 class="heading">Log in to account</h3>
+      <img src="./icons/favicon2.png" alt="LOGO" class="logo" />
+      <div class="credentials">
+        <form>
+          <input type="text" placeholder="user" required />
+          <input type="number" max="9999" placeholder="pin" required />
+          <submit type="submit" class="submit-button">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </submit>
+        </form>
+        <!-- <form class="form-hide">
+          <submit type="submit" class="log-out-button">
+            Log out <ion-icon name="arrow-forward-outline"></ion-icon>
+          </submit>
+        </form> -->
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="user-info">
+          <div class="user-details">
+            <h3 class="heading">Current Balance</h3>
+            <p class="date">As of 05/03/2022</p>
+          </div>
+          <h2 class="balance-info">Rs.3840</h2>
+        </div>
+        <div class="transaction">
+          <div class="transaction-history">
+            <ul>
+              <li>
+                <span class="transaction-type deposit">Deposit</span>
+                <span class="transaction-amount">Rs. 200</span>
+                <span class="transaction-date">3 DAYS AGO</span>
+              </li>
+              <li>
+                <span class="transaction-type deposit">Deposit</span>
+                <span class="transaction-amount">Rs. 200</span>
+                <span class="transaction-date">15/03/2021</span>
+              </li>
+              <li>
+                <span class="transaction-type deposit">Deposit</span>
+                <span class="transaction-amount">Rs. 200</span>
+                <span class="transaction-date">14 DAYS AGO</span>
+              </li>
+              <li>
+                <span class="transaction-type withdrawal">Withdrawal</span>
+                <span class="transaction-amount">Rs. 200</span>
+                <span class="transaction-date">3 DAYS AGO</span>
+              </li>
+              <li>
+                <span class="transaction-type withdrawal">Withdrawal</span>
+                <span class="transaction-amount">Rs. 200</span>
+                <span class="transaction-date">3 DAYS AGO</span>
+              </li>
+              <li>
+                <span class="transaction-type withdrawal">Withdrawal</span>
+                <span class="transaction-amount">Rs. 200</span>
+                <span class="transaction-date">3 DAYS AGO</span>
+              </li>
+            </ul>
+            <div class="transaction-info">
+              <span class="in">
+                <span class="text">IN</span>
+                <span class="value">Rs. 5220</span>
+              </span>
+              <span class="out">
+                <span class="text">OUT</span>
+                <span class="value">Rs. 1180</span>
+              </span>
+              <span class="interest">
+                <span class="text">INTEREST</span>
+                <span class="value high-value">Rs. 61.8</span>
+              </span>
+              <span class="sort">
+                <ion-icon name="arrow-down-circle-outline"></ion-icon>
+                <span class="text">SORT</span>
+              </span>
+            </div>
+          </div>
+          <div class="transaction-operation">
+            <div class="operation-transfer">
+              <h3 class="heading">Transfer money</h3>
+              <form>
+                <div class="transfer-to">
+                  <input type="text" />
+                  <p>Transfer to</p>
+                </div>
+                <div class="transfer-amount">
+                  <input type="number" />
+                  <p>Amount</p>
+                </div>
+                <submit class="submit-button">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </submit>
+              </form>
+            </div>
+            <div class="operation-loan">
+              <h3 class="heading">Request Loan</h3>
+              <form>
+                <div class="request-loan">
+                  <input type="number" />
+                  <p>Amount</p>
+                </div>
+                <submit class="submit-button">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </submit>
+              </form>
+            </div>
+            <div class="operation-close">
+              <h3 class="heading">Close account</h3>
+              <form>
+                <div class="account-user">
+                  <input type="text" />
+                  <p>Confirm user</p>
+                </div>
+                <div class="account-pin">
+                  <input type="password" max="9999" />
+                  <p>Confirm PIN</p>
+                </div>
+                <submit class="submit-button">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </submit>
+              </form>
+            </div>
+            <span class="text">You will be logged out in 05:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
